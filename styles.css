@@ -1,0 +1,92 @@
+.copyRight {
+  text-align: right;
+}
+.box {
+  max-width: 100%;
+  padding: 0px 10px;
+  overflow: auto;
+  margin: 20px 5px;
+}
+.copyArea {
+  max-width: 850px;
+  float: none;
+  display:block;
+  overflow: hidden;
+}
+.copyArea p {
+  margin-top: 20px;
+}
+.closeArea {
+  width: 60px;
+  float: right;
+  padding: 30px;
+  margin-right: 60px;
+}
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: yellow;
+}
+/* Fade in animation */
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 2;
+  -moz-animation:fadeIn ease-in 2;
+  animation:fadeIn ease-in 2;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+}
+
+/* Unique Box Styles */
+.warning {
+  background:salmon;
+  border-radius: 3px;
+}
+/*.weather {
+  background: skyblue;
+}
+.newsletter{
+  background:turquoise;
+  border-top:5px solid #2A9489;
+  border-radius: 5px;
+  color: #2A9489;
+}
+.hours {
+  background:lightgrey;
+  border:1px solid #ccc;
+  border-radius: 3px;
+}*/
+.specialOffer {
+  background: repeating-linear-gradient(45deg, rgba(0,128,128,.25), rgba(0,128,128,.25) 10px, rgba(0,128,128,.3) 10px, rgba(0,128,128,.3) 20px);
+  box-shadow: 5px 5px 0 rgba(0,0,0,.2);
+  border: 2px solid #008080;
+  color:#008080;
+}
+
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.34); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, .6); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
