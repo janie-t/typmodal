@@ -20,10 +20,19 @@
 
     <script type="text/javascript">
       $(window).on('load', function(){
-        if (localStorage.getItem("alertShown") === null) {
-          $("#urgent").css("display", "");
+        if (localStorage.getItem("alertA") === null) {
+          $("#urgent").css("display", "block");
         }
-        localStorage.setItem('alertShown', 1);
+        localStorage.setItem("alertA", 1);
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(window).on('load', function(){
+        if (localStorage.getItem("alertB") === null) {
+          $("#important").css("display", "block");
+        }
+        localStorage.setItem("alertB", 1);
       });
     </script>
 
@@ -74,14 +83,14 @@
     </div>
 
     <!-- Alert Box Important-->
-    <div class="box warning fade-in enlarge" id="urgent">
+    <div class="box warning fade-in enlarge" id="urgent" style="display: none">
       <div class="closeArea" id="warning"><p class="copyRight"><button id="hide">Thanks, got it!</button></p></div>
       <div class="copyArea"><p><strong>Urgent Notice:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, commodi.</p></div>
     </div>
 
     <!-- Alert Box Not so important-->
 
-    <div class="box specialOffer fade-in enlarge" id="important">
+    <div class="box specialOffer fade-in enlarge" id="important" style="display: none">
       <div class="closeArea" id="specialOffer"><p class="copyRight"><button id="close">Thanks, got it!</button></p></div>
       <div class="copyArea"><p><strong>Important Notice:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, commodi.</p></div>
     </div>
